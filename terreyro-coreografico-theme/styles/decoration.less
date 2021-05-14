@@ -1,0 +1,40 @@
+@import './structure.less';
+.decoration {
+	display: block;
+	height: 4px;
+	background-color: @yellow;
+}
+.decoration-height {
+	display: block;
+	height: 100%;
+	width: 4px;
+	background-color: @yellow;
+	@media screen and (max-width: @screen-sm) {
+		width: 2px;
+	}
+}
+
+.decoration-bg {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	@media screen and (max-width: @screen-sm) {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+}
+
+.decoration-sm {
+	width: 70px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	@media screen and (max-width: @screen-sm) {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.decoration {
+		height: 2px;
+	}
+}
